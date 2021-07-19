@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/netflix_app_2021/static/css/main.6e6b5e9f.chunk.css",
-    "main.js": "/netflix_app_2021/static/js/main.5cf0b927.chunk.js",
-    "main.js.map": "/netflix_app_2021/static/js/main.5cf0b927.chunk.js.map",
+    "main.css": "/netflix_app_2021/static/css/main.f7d45f14.chunk.css",
+    "main.js": "/netflix_app_2021/static/js/main.c9ffe0af.chunk.js",
+    "main.js.map": "/netflix_app_2021/static/js/main.c9ffe0af.chunk.js.map",
     "runtime-main.js": "/netflix_app_2021/static/js/runtime-main.bfee630a.js",
     "runtime-main.js.map": "/netflix_app_2021/static/js/runtime-main.bfee630a.js.map",
     "static/js/2.c9b1007c.chunk.js": "/netflix_app_2021/static/js/2.c9b1007c.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.ae2c9f7c.chunk.js": "/netflix_app_2021/static/js/3.ae2c9f7c.chunk.js",
     "static/js/3.ae2c9f7c.chunk.js.map": "/netflix_app_2021/static/js/3.ae2c9f7c.chunk.js.map",
     "index.html": "/netflix_app_2021/index.html",
-    "static/css/main.6e6b5e9f.chunk.css.map": "/netflix_app_2021/static/css/main.6e6b5e9f.chunk.css.map",
+    "static/css/main.f7d45f14.chunk.css.map": "/netflix_app_2021/static/css/main.f7d45f14.chunk.css.map",
     "static/js/2.c9b1007c.chunk.js.LICENSE.txt": "/netflix_app_2021/static/js/2.c9b1007c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.bfee630a.js",
     "static/js/2.c9b1007c.chunk.js",
-    "static/css/main.6e6b5e9f.chunk.css",
-    "static/js/main.5cf0b927.chunk.js"
+    "static/css/main.f7d45f14.chunk.css",
+    "static/js/main.c9ffe0af.chunk.js"
   ]
 }
