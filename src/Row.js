@@ -18,8 +18,13 @@ function Row({ title, fetchUrl, isLargeRow }) {
       const request = await axios.get(fetchUrl);
       //App.js의 fetchUrl
       // ex) https://api.themoviedb.org/3/discover/tv?api_key=${API_KEY}&with_networks=213
+      const mixed_rate_movies = request.data.results;
 
-      setMovies(request.data.results);
+      const all_rate_request = mixed_rate_movies.filter(function (movie) {
+        return movie.adult === false;
+      });
+
+      setMovies(all_rate_request);
       return request;
     }
     fetchData();
