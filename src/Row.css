@@ -2,6 +2,9 @@
   margin-left: 20px;
 }
 
+.row_head {
+  color: white;
+}
 .row__posters {
   display: flex;
   overflow-y: hidden; /* 화면을 넘어갈 경우 세로 스크롤 할지 말지 */

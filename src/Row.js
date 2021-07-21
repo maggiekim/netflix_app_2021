@@ -19,12 +19,11 @@ function Row({ title, fetchUrl, isLargeRow }) {
       //App.js의 fetchUrl
       // ex) https://api.themoviedb.org/3/discover/tv?api_key=${API_KEY}&with_networks=213
       const mixed_rate_movies = request.data.results;
-
-      const all_rate_request = mixed_rate_movies.filter(function (movie) {
+      var all_rate_request = mixed_rate_movies.filter(function (movie) {
         return movie.adult === false;
       });
-
       setMovies(all_rate_request);
+
       return request;
     }
     fetchData();
@@ -32,7 +31,7 @@ function Row({ title, fetchUrl, isLargeRow }) {
   // [fetchUrl]은 useEffect에게 block 밖에 있는 variable를 쓰고있다고 알려주는것
   // 여기서 Url은 계속 바뀌니까 바뀔 때 마다 알려주는건가?
 
-  console.table(movies);
+  //console.table(movies);
 
   const opts = {
     height: "390",
@@ -47,7 +46,9 @@ function Row({ title, fetchUrl, isLargeRow }) {
     if (trailerUrl) {
       setTrailerUrl("");
     } else {
-      movieTrailer(movie?.name || "")
+      //console.log("%cNAME: " + movieName, "color: green; font-size: 16px;");
+      const movieName = movie && movie.name ? movie.name : movie.title;
+      movieTrailer(movieName)
         .then((url) => {
           // https://www.youtube.com/watch?v=XtMThy8QKqU
           // ?뒤에 부분 pass해서 어떻게 한다는 듯. XtMThy8QKqU 이 부분은 video ID
@@ -62,8 +63,7 @@ function Row({ title, fetchUrl, isLargeRow }) {
 
   return (
     <div className="row">
-      <h2>{title}</h2>
-
+      <h2 className="row_head">{title}</h2>
       <div className="row__posters">
         {movies.map((movie) => (
           <img
