@@ -6,10 +6,13 @@ import Banner from "./Banner";
 import Nav from "./Nav";
 
 function App() {
+  // const [trailerON, setTrailerOn] = useState(false);
+  // const trailerOn = React.createContext(false);
+
   return (
     <div className="app">
       <Nav />
-      <Banner />
+      <Banner fetchUrl={requests.fetchNetflixOriginals} />
       <Row
         title="NETFLIX ORIGINALS"
         fetchUrl={requests.fetchNetflixOriginals}
