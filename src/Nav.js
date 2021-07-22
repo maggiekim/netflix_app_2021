@@ -8,10 +8,8 @@ function Nav() {
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (window.scrollY > 100) {
-        console.log("HANDLE SHOW ===== TRUE");
         handleShow(true);
       } else {
-        console.log("HANDLE SHOW ===== FALSE");
         handleShow(false);
       }
     });
@@ -20,11 +18,14 @@ function Nav() {
       window.removeEventListener("scroll", clickfn);
     };
   }, []);
-
+  function refreshPage() {
+    window.location.reload();
+  }
   return (
     <div className={`nav ${show && "nav__black"}`}>
       <img
         className="nav__logo"
+        onClick={() => refreshPage()}
         //src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Logo_Netflix.png"
         src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png"
         alt="Netflix Logo"
